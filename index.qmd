@@ -20,6 +20,12 @@ tabla <- data.frame(Integrantes = integrantes, Participacion = participacion)
 tabl
 ```
 
+Paquetes necesarios para que caguen en la web:
+
+```{r}
+library(ellmer)
+```
+
 # Introducción:
 
 En este trabajo se usó <https://labelstud.io/> para realizar la anotación de imágenes usando la segmentación por polígonos. En este trabajo se explica todo el trabajo paso a paso. Labelstudio se usa para realizar anotaciones de imágenes en diferentes proyectos.
@@ -48,7 +54,7 @@ Descargar el instalador de Anaconda en <https://www.anaconda.com/download/succes
 
 Figura 1: Descarga de Anaconda Distribution
 
-## Paso 2. 
+## Paso 2.
 
 Buscar "Anaconda Prompt" y abrir la intefaz (Figura 2).
 
@@ -56,7 +62,7 @@ Buscar "Anaconda Prompt" y abrir la intefaz (Figura 2).
 
 Figura 2: Anaconda Prompt (clic en "abrir")
 
-## Paso 3. 
+## Paso 3.
 
 -   Buscar <https://labelstud.io/> y copiar el código "pip install -U label-studio" (Figura 3) y dar Enter.
 
@@ -70,7 +76,7 @@ Figura 3: Ejecución de código: "pip install -U label-studio"
 
 Figura 4: Ejecución de código: "label-studio"
 
-## Paso 4. 
+## Paso 4.
 
 Ver Figura 5.
 
