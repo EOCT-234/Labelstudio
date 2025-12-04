@@ -1,0 +1,125 @@
+---
+title: "Uso de Label_Studio"
+author: "Grupo 5"
+format: html
+editor: visual
+---
+
+```{r}
+
+integrantes <- c("Campos Troyes, Edgar Orlando"
+                 , "Vasquez Guevara, Jheferson Yoel"
+                 , "Tapia Chavarri. Britney Emeli"
+                 , "Fernandez Rojas, Jonatan Dali"
+                 , "Gomez Cruz, Kevin Orlando"
+                 , "Yantec Ocampo, Daemar Enrique")
+participacion <- c("100%", "30%", "100%", "30%", "30%", "30%")
+
+tabla <- data.frame(Integrantes = integrantes, Participacion = participacion)
+
+tabl
+```
+
+# Introducción:
+
+En este trabajo se usó <https://labelstud.io/> para realizar la anotación de imágenes usando la segmentación por polígonos. En este trabajo se explica todo el trabajo paso a paso. Labelstudio se usa para realizar anotaciones de imágenes en diferentes proyectos.
+
+# Objetivo:
+
+-   Realizar la segmentación por polígonos de 25 imágenes de lúcuma.
+
+# Material:
+
+-   Laptop
+
+-   Instalador de anaconda
+
+-   Cógido de label studio para instalación
+
+-   25 imágenes de hojas de lúcuma
+
+# Procedimiento:
+
+## Paso 1.
+
+Descargar el instalador de Anaconda en <https://www.anaconda.com/download/success> (Figura 1), e instalarlo (ejecutar con anticlic y "como administrador", dejar todo por defecto)
+
+![](images/clipboard-2118395736.png)
+
+Figura 1: Descarga de Anaconda Distribution
+
+## Paso 2. 
+
+Buscar "Anaconda Prompt" y abrir la intefaz (Figura 2).
+
+![](images/clipboard-3274600505.png)
+
+Figura 2: Anaconda Prompt (clic en "abrir")
+
+## Paso 3. 
+
+-   Buscar <https://labelstud.io/> y copiar el código "pip install -U label-studio" (Figura 3) y dar Enter.
+
+![](images/clipboard-1248583173.png)
+
+Figura 3: Ejecución de código: "pip install -U label-studio"
+
+-   Cuando finalice ejecutar "label-studio" (Figura 4) y dar Enter.
+
+![](images/clipboard-2862160596.png)
+
+Figura 4: Ejecución de código: "label-studio"
+
+## Paso 4. 
+
+Ver Figura 5.
+
+-   Dar un nombre: PAD_LUCUMA
+
+<!-- -->
+
+-   Importación de datos: <https://drive.google.com/drive/folders/1pv3_1awIPfNOG9ZR2jCWH8xkxYaGVREK?usp=drive_link>
+
+-   Configuración de etiquetado -\> Visión por computadora -\> Segmentación semántica por polígonos
+
+![](images/clipboard-270249521.png)
+
+Figura 5: Configuración dentro de labelstudio
+
+-   Segmentación semántica por polígonos, dentro de este agregamos las etiquetas que tiene la imagen: hoja, escala y peciolo.
+
+-   Finalmente clic en "Save" o "Ahorrar".
+
+## Paso 5.
+
+Clic en la imagen y se abrió la ventana para seleccionar los polígonos por etiquetas (Figura 6).
+
+![](images/clipboard-3772356102.png)
+
+Figura 6: Slección de polígono con su etiqueta.
+
+## Paso 5.
+
+Clic en una etiqueta y luego cerrar el polígono, finalizando clic en "Update" para que se grabe como tal (Figura 7)
+
+![](images/clipboard-1370867132.png)
+
+Figura 7: Grabación de polígonos.
+
+Y repetir el procedimiento con todas las imágenes.
+
+# Resultados:
+
+Los resultados se pueden ver en el siguiente código que pueda ejecutar en Anaconda Prompt:
+
+<View>
+
+<Header value="Select label and click the image to start"/>
+
+<Image name="image" value="$image" zoom="true"/>
+
+<PolygonLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9">
+
+<Label value="Hoja" background="#1508c9"/><Label value="Escala" background="#da1010"/><Label value="Peciolo" background="#9effa9"/></PolygonLabels>
+
+</View>
