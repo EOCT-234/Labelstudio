@@ -114,6 +114,10 @@ Los resultados de anotación se pueden ver en el siguiente enlace:
 
 <http://localhost:8080/user/signup/?token=JWN30EFKosbahoVwLydKazUGHKGURDPS2CaHzWrr>
 
+Recuerde:
+
+Ese código solo será útil cuando labelstudio sea impulsado por Anaconda, por lo que el uso del enlace directamente no es posible.
+
 # Anexos:
 
 Código de medidas usado:
