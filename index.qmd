@@ -110,14 +110,9 @@ Y repetir el procedimiento con todas las imágenes.
 
 # Resultados:
 
-Para ver los resultados ejecute Anconda Prompt, ejecute la linea "label-studio"
+Los resultados de anotación se pueden ver en el siguiente enlace:
 
-Los resultados de anotación se pueden ver en la cuenta:
-
-Sitio: [http://localhost:8080](http://localhost:8080/user/signup/)\
-correo: campostroyesedgar\@gmail.com
-
-contraseña: E23d45g67_Cam%tro
+<http://localhost:8080/user/signup/?token=JWN30EFKosbahoVwLydKazUGHKGURDPS2CaHzWrr>
 
 # Anexos:
 
