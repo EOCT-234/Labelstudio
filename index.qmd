@@ -32,6 +32,8 @@ En este trabajo se usó <https://labelstud.io/> para realizar la anotación de i
 
 -   Laptop
 
+-   Lapicero
+
 -   Instalador de anaconda
 
 -   Cógido de label studio para instalación
