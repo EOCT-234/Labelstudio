@@ -13,26 +13,20 @@ integrantes <- c("Campos Troyes, Edgar Orlando"
                  , "Fernandez Rojas, Jonatan Dali"
                  , "Gomez Cruz, Kevin Orlando"
                  , "Yantec Ocampo, Daemar Enrique")
-participacion <- c("100%", "30%", "100%", "30%", "30%", "30%")
+participacion <- c("100%", "25%", "100%", "25%", "25%", "25%")
 
 tabla <- data.frame(Integrantes = integrantes, Participacion = participacion)
 
-tabl
-```
-
-Paquetes necesarios para que caguen en la web:
-
-```{r}
-library(ellmer)
+tabla
 ```
 
 # Introducción:
 
-En este trabajo se usó <https://labelstud.io/> para realizar la anotación de imágenes usando la segmentación por polígonos. En este trabajo se explica todo el trabajo paso a paso. Labelstudio se usa para realizar anotaciones de imágenes en diferentes proyectos.
+En este trabajo se usó <https://labelstud.io/> para realizar la anotación de imágenes usando la segmentación por polígonos, dentro del cual se usaron las clases o etiquetas hoja, escala y peciolo para segmentar partes de cada imagen. En este trabajo se explica todo el trabajo paso a paso.
 
 # Objetivo:
 
--   Realizar la segmentación por polígonos de 25 imágenes de lúcuma.
+-   Realizar la segmentación por polígonos de 25 imágenes de hojas lúcuma.
 
 # Material:
 
@@ -116,16 +110,31 @@ Y repetir el procedimiento con todas las imágenes.
 
 # Resultados:
 
-Los resultados se pueden ver en el siguiente código que pueda ejecutar en Anaconda Prompt:
+Para ver los resultados ejecute Anconda Prompt, ejecute la linea "label-studio"
 
-<View>
+Los resultados de anotación se pueden ver en la cuenta:
 
-<Header value="Select label and click the image to start"/>
+Sitio: [http://localhost:8080](http://localhost:8080/user/signup/)\
+correo: campostroyesedgar\@gmail.com
 
-<Image name="image" value="$image" zoom="true"/>
+contraseña: E23d45g67_Cam%tro
 
-<PolygonLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9">
+# Anexos:
 
-<Label value="Hoja" background="#1508c9"/><Label value="Escala" background="#da1010"/><Label value="Peciolo" background="#9effa9"/></PolygonLabels>
+Código de medidas usado:
 
-</View>
+```{r}
+#<View>
+
+#<Header value="Select label and click the image to start"/>
+
+#<Image name="image" value="$image" zoom="true"/>
+
+#<PolygonLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9">
+
+#<Label value="Hoja" background="#1508c9"/><Label value="Escala" background="#da1010"/><Label value="Peciolo" background="#9effa9"/></PolygonLabels>
+
+#</View>
+```
+
+\*Sidesea usar el mismo código para la segmentación por polígonos, borre los "\#" al inicio de cada fila.
