@@ -136,4 +136,4 @@ Código de medidas usado:
 #</View>
 ```
 
-\*Sidesea usar el mismo código para la segmentación por polígonos, borre los "\#" al inicio de cada fila.
+\*Sidesea usar el mismo código para la segmentación por polígonos, borre los "\#" al inicio de cada fila, y peguelos dentro de labelstudio.
